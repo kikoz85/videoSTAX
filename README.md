@@ -16,6 +16,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/kikoz85/videostax-releases?style=flat-square&color=2b6cb0)](https://github.com/kikoz85/videostax-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/kikoz85/videostax-releases/total?style=flat-square&color=38a169)](https://github.com/kikoz85/videostax-releases/releases)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-gray?style=flat-square)](#-download)
+[![Website](https://img.shields.io/badge/website-enricofanucchi.com-F7941D?style=flat-square)](https://www.enricofanucchi.com/en/app/videostax?utm_source=github&utm_campaign=readme)
 
 🇬🇧 **English** (below) · 🇮🇹 [**Italiano**](#-italiano)
 
