@@ -1,57 +1,59 @@
-<h1 style="border: none; margin: 0 0 16px 0; padding: 0;">
-  <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="border: none; border-collapse: collapse; border-spacing: 0;">
-    <tr>
-      <td style="border: none; vertical-align: middle; padding: 0 18px 0 0; line-height: 1;">
-        <img src="assets/logo.svg" alt="VideoSTAX logo" width="44" height="34" style="display: block; border: none;" />
-      </td>
-      <td style="border: none; vertical-align: middle; padding: 0;">
-        VideoSTAX
-      </td>
-    </tr>
-  </table>
-</h1>
+<p align="center"><img src="assets/icon.png" width="128" alt="VideoSTAX"></p>
 
-**Video transcoding studio for macOS, Windows and Linux** · **Studio di transcodifica video per macOS, Windows e Linux**
+<h1 align="center">VideoSTAX</h1>
 
-[![Latest Release](https://img.shields.io/github/v/release/kikoz85/videoSTAX?style=flat-square&color=2b6cb0)](https://github.com/kikoz85/videoSTAX/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/kikoz85/videoSTAX/total?style=flat-square&color=38a169)](https://github.com/kikoz85/videoSTAX/releases)
-[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-gray?style=flat-square)](#-download)
-[![Website](https://img.shields.io/badge/website-enricofanucchi.com-F7941D?style=flat-square)](https://www.enricofanucchi.com/en/app/videostax?utm_source=github&utm_campaign=readme)
+<p align="center"><b>Video transcoding studio — compress and convert videos, one file or a whole queue.</b><br>
+free · no subscriptions · macOS · Windows · Linux</p>
 
-🇬🇧 **English** (below) · 🇮🇹 [**Italiano**](#-italiano)
+<p align="center">
+<a href="https://github.com/kikoz85/videoSTAX/releases/latest"><img src="https://img.shields.io/github/v/release/kikoz85/videoSTAX?label=download&color=2B6CB0" alt="Download"></a>
+<a href="https://github.com/kikoz85/videoSTAX/releases"><img src="https://img.shields.io/github/downloads/kikoz85/videoSTAX/total?color=38A169" alt="Downloads"></a>
+<a href="https://www.enricofanucchi.com/en/app/videostax?utm_source=github&utm_campaign=readme"><img src="https://img.shields.io/badge/website-enricofanucchi.com-F7941D" alt="Website"></a>
+<a href="https://github.com/sponsors/kikoz85"><img src="https://img.shields.io/badge/sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white" alt="Sponsor VideoSTAX"></a>
+<img src="https://img.shields.io/badge/macOS%20%C2%B7%20Windows%20%C2%B7%20Linux-FF6B35" alt="macOS · Windows · Linux">
+</p>
 
-![VideoSTAX workbench with a loaded source](assets/screenshots/workbench-linux.png)
+<p align="center"><a href="#english">English</a> · <a href="#italiano">Italiano</a></p>
+
+<p align="center"><img src="assets/screenshots/workbench-linux.png" alt="VideoSTAX workbench with a loaded source" width="900"></p>
 
 ---
 
-## 🇬🇧 English
+## English
 
 VideoSTAX compresses and converts video files. You open a file, choose how the result should look (codec, quality, size, audio and subtitle tracks) and VideoSTAX produces the new file, alone or in a queue of many files. Everything happens on one screen, in the spirit of StaxRip, on **macOS, Windows and Linux**.
 
 It uses well-known tools under the hood (FFmpeg, MKVToolNix, VapourSynth) and the hardware encoders of your graphics card when available: **Apple VideoToolbox**, **NVIDIA NVENC**, **Intel Quick Sync** and **AMD VCE**. All tools are included in the download, so there is nothing else to install.
 
-**Contents:** [Download](#-download) · [What's new](#-whats-new-in-095) · [Screenshots](#-screenshots) · [Features](#-features) · [Quick start](#-quick-start) · [Encoders](#-encoders) · [Requirements](#-system-requirements) · [Installation](#-installation) · [FAQ](#-faq-and-troubleshooting) · [Support](#-support-the-project)
-
-### 📥 Download
+### Download
 
 Get the files from the **[latest release](https://github.com/kikoz85/videoSTAX/releases/latest)** (all versions: [Releases page](https://github.com/kikoz85/videoSTAX/releases)).
 
 | Platform | File | How to install |
 | :--- | :--- | :--- |
-| **macOS** (Apple Silicon) | `VideoSTAX-v0.9.5-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
-| **Windows 10/11** (64-bit) | `VideoSTAX-v0.9.5-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
-| **Linux** (any distribution, x86_64) | `VideoSTAX-v0.9.5-x86_64.AppImage` | `chmod +x` the file and run it |
-| **Debian / Ubuntu / Mint** | `VideoSTAX-v0.9.5-amd64.deb` | `sudo apt install ./VideoSTAX-v0.9.5-amd64.deb` |
-| **Fedora / openSUSE / RHEL** | `VideoSTAX-v0.9.5-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v0.9.5-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **macOS** (Apple Silicon) | `VideoSTAX-v0.9.6-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
+| **Windows 10/11** (64-bit) | `VideoSTAX-v0.9.6-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
+| **Linux** (any distribution, x86_64) | `VideoSTAX-v0.9.6-x86_64.AppImage` | `chmod +x` the file and run it |
+| **Debian / Ubuntu / Mint** | `VideoSTAX-v0.9.6-amd64.deb` | `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb` |
+| **Fedora / openSUSE / RHEL** | `VideoSTAX-v0.9.6-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
 
-Details for each system are in [Installation](#-installation).
+Details for each system are in [Installation](#installation).
 
-### ✨ What's new in 0.9.5
+### What's new in 0.9.6
+
+- VideoSTAX's GitHub pages have a new address: **[github.com/kikoz85/videoSTAX](https://github.com/kikoz85/videoSTAX)** (the old `videostax-releases` links still redirect here).
+- The in-app update check uses the new address directly. No other change: if you have 0.9.4 or 0.9.5, VideoSTAX offers this update by itself; or use **Settings → Updates → Check now**.
+
+Full notes: [release 0.9.6](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.6).
+
+<details>
+<summary>What's new in 0.9.5</summary>
 
 - The **Support development** button (GitHub Sponsors) is back in the About window, also reachable with the new ⓘ toolbar button on macOS, and in **Settings → Updates**.
-- If you have 0.9.4, VideoSTAX offers this update by itself; or use **Settings → Updates → Check now**.
 
 Full notes: [release 0.9.5](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.5).
+
+</details>
 
 <details>
 <summary>What's new in 0.9.4</summary>
@@ -86,7 +88,7 @@ Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0
 
 </details>
 
-### 🖼️ Screenshots
+### Screenshots
 
 | | |
 | :---: | :---: |
@@ -101,7 +103,7 @@ Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0
 | ![Bundled tools](assets/screenshots/tools-linux.png) | |
 | **Apps**: the bundled tools and their status | |
 
-### 🧰 Features
+### Features
 
 #### One-screen workbench
 - **Source** card: thumbnail of the video and its details at a glance: codec, resolution, frame rate, bit depth, HDR/SDR, duration, size, bitrate, chapters, number of audio and subtitle tracks.
@@ -121,7 +123,7 @@ Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0
 - HDR sources keep their color information when encoded at 10 bit.
 
 #### Encoding
-- Codecs **H.264**, **H.265/HEVC** and **AV1** in software (x264, x265, SVT-AV1, libaom) or in hardware (see [Encoders](#-encoders)); **copy** to keep the original video; **command line** for your own FFmpeg arguments.
+- Codecs **H.264**, **H.265/HEVC** and **AV1** in software (x264, x265, SVT-AV1, libaom) or in hardware (see [Encoders](#encoders)); **copy** to keep the original video; **command line** for your own FFmpeg arguments.
 - Containers **MKV**, **MP4**, **MOV** and **WebM**.
 - Constant quality (CRF/quality) or bitrate (VBR/CBR, 2-pass for x264/x265). The quality value has −/+ buttons right on the Codec card.
 - Presets and tunes for every encoder, plus all the advanced options in a searchable dialog that shows the resulting command line.
@@ -160,7 +162,7 @@ Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0
 | F8 | Show or hide the log (processing panel) |
 | Esc | Stop the running job (processing panel) |
 
-### 🚀 Quick start
+### Quick start
 
 1. **Open** a video: drag it onto the window or click **Open**.
 2. Check the **Source** card. Click the thumbnail if you want to see the frame preview.
@@ -169,7 +171,7 @@ Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0
 5. Optionally **resize** or **crop** in the Resize card, and choose the **audio** and **subtitle** tracks.
 6. Look at the **Destination** summary, then click **Start** (or **Add to queue** to prepare more files and start them from **Jobs**).
 
-### 🎛️ Encoders
+### Encoders
 
 Hardware encoders are much faster than software ones; software encoders usually give smaller files at the same quality. VideoSTAX shows a hardware encoder only when your computer has a compatible graphics card and driver.
 
@@ -184,7 +186,7 @@ Hardware encoders are much faster than software ones; software encoders usually 
 
 \* AV1 hardware encoding requires a recent GPU that supports it.
 
-### 💻 System requirements
+### System requirements
 
 | | macOS | Windows | Linux |
 | :--- | :--- | :--- | :--- |
@@ -196,15 +198,15 @@ Hardware encoders are much faster than software ones; software encoders usually 
 
 Keep free disk space of at least two to three times the size of the output file: some phases write temporary files that are deleted at the end.
 
-### 📦 Installation
+### Installation
 
 #### macOS
-1. Open `VideoSTAX-v0.9.5-macOS.dmg` and drag **VideoSTAX** into **Applications**.
+1. Open `VideoSTAX-v0.9.6-macOS.dmg` and drag **VideoSTAX** into **Applications**.
 2. The first time, macOS may say the app is from an unidentified developer. Open **System Settings → Privacy & Security** and click **Open Anyway** next to VideoSTAX.
 3. Settings are stored in `~/Library/Application Support/VideoSTAX`. To uninstall, drag the app to the Trash.
 
 #### Windows
-1. Extract `VideoSTAX-v0.9.5-Windows-x64.zip` to a folder of your choice (for example `C:\Programs\VideoSTAX`).
+1. Extract `VideoSTAX-v0.9.6-Windows-x64.zip` to a folder of your choice (for example `C:\Programs\VideoSTAX`).
 2. Run `videostax_ui.exe`. Keep the whole folder together: the `bin` folder contains the encoding tools.
 3. If SmartScreen shows a warning, click **More info → Run anyway**.
 4. Settings are stored in `%APPDATA%\VideoSTAX`. To uninstall, delete the folder.
@@ -212,17 +214,17 @@ Keep free disk space of at least two to three times the size of the output file:
 #### Linux
 - **AppImage** (any distribution):
   ```bash
-  chmod +x VideoSTAX-v0.9.5-x86_64.AppImage
-  ./VideoSTAX-v0.9.5-x86_64.AppImage
+  chmod +x VideoSTAX-v0.9.6-x86_64.AppImage
+  ./VideoSTAX-v0.9.6-x86_64.AppImage
   ```
   If it does not start, install FUSE 2 (`libfuse2` on Ubuntu/Debian) or run it with `--appimage-extract-and-run`.
-- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v0.9.5-amd64.deb`
-- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v0.9.5-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v0.9.5-x86_64.rpm`
+- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb`
+- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v0.9.6-x86_64.rpm`
 - With .deb and .rpm, VideoSTAX appears in the application menu and can be started with `videostax`. It is removed with `sudo apt remove videostax` or `sudo dnf remove videostax`.
 - Settings are stored in `~/.config/VideoSTAX`.
 - For hardware encoding, the GPU driver must be installed (NVIDIA proprietary driver, or Intel/AMD with VAAPI support).
 
-### ❓ FAQ and troubleshooting
+### FAQ and troubleshooting
 
 **How do I update VideoSTAX?**
 When a new version is out, VideoSTAX shows a window at startup: click **Download**. On macOS drag the app from the opened DMG to Applications; on Windows extract the ZIP over your VideoSTAX folder; the Linux AppImage replaces itself (click **Restart now**); .deb/.rpm open in the system installer. You can also use **Settings → Updates → Check now**, or download from the [latest release](https://github.com/kikoz85/videoSTAX/releases/latest). Your settings are kept.
@@ -245,44 +247,51 @@ By default in the same folder as the source, with `_enc` added to the name. You 
 **Can I close VideoSTAX while the queue is running?**
 Closing stops the running jobs, but the queue is saved: reopen it with **Jobs → Load** and start it again.
 
-### 💖 Support the project
+### Support VideoSTAX
 
-VideoSTAX is developed and maintained independently. If it helps your video work, you can support new features and improvements:
+VideoSTAX is free, with no ads and no subscriptions. If it helps your video work, you can support it on **[GitHub Sponsors](https://github.com/sponsors/kikoz85)**: sponsorships pay for code-signing certificates (no more warnings on first launch), test machines for the three systems and the time for new features.
 
-👉 **[Sponsor VideoSTAX on GitHub](https://github.com/sponsors/kikoz85)**
+<p align="center"><a href="https://github.com/sponsors/kikoz85"><img src="https://img.shields.io/badge/Sponsor%20VideoSTAX-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor VideoSTAX on GitHub"></a></p>
 
-Bug reports and suggestions are welcome in [Issues](https://github.com/kikoz85/videoSTAX/issues).
+You can also find the **Support development** button in the app's About window and in **Settings → Updates**. Bug reports and suggestions are welcome in [Issues](https://github.com/kikoz85/videoSTAX/issues).
 
 ---
 
-## 🇮🇹 Italiano
+## Italiano
 
 VideoSTAX comprime e converte file video. Apri un file, scegli come deve essere il risultato (codec, qualità, dimensioni, tracce audio e sottotitoli) e VideoSTAX crea il nuovo file, da solo o in una coda di tanti file. Tutto avviene in un'unica schermata, nello stile di StaxRip, su **macOS, Windows e Linux**.
 
 Usa strumenti affermati (FFmpeg, MKVToolNix, VapourSynth) e, quando disponibili, gli encoder hardware della scheda video: **Apple VideoToolbox**, **NVIDIA NVENC**, **Intel Quick Sync** e **AMD VCE**. Gli strumenti sono già inclusi nel download: non serve installare altro.
 
-**Indice:** [Download](#-download-1) · [Novità](#-novità-della-095) · [Schermate](#-schermate) · [Funzionalità](#-funzionalità) · [Guida rapida](#-guida-rapida) · [Encoder](#-encoder) · [Requisiti](#-requisiti-di-sistema) · [Installazione](#-installazione) · [Domande frequenti](#-domande-frequenti) · [Supporto](#-sostieni-il-progetto)
-
-### 📥 Download
+### Download
 
 Scarica i file dall'**[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest)** (tutte le versioni: [pagina Releases](https://github.com/kikoz85/videoSTAX/releases)).
 
 | Piattaforma | File | Come installare |
 | :--- | :--- | :--- |
-| **macOS** (Apple Silicon) | `VideoSTAX-v0.9.5-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
-| **Windows 10/11** (64 bit) | `VideoSTAX-v0.9.5-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
-| **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v0.9.5-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
-| **Debian / Ubuntu / Mint** | `VideoSTAX-v0.9.5-amd64.deb` | `sudo apt install ./VideoSTAX-v0.9.5-amd64.deb` |
-| **Fedora / openSUSE / RHEL** | `VideoSTAX-v0.9.5-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v0.9.5-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **macOS** (Apple Silicon) | `VideoSTAX-v0.9.6-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
+| **Windows 10/11** (64 bit) | `VideoSTAX-v0.9.6-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
+| **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v0.9.6-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
+| **Debian / Ubuntu / Mint** | `VideoSTAX-v0.9.6-amd64.deb` | `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb` |
+| **Fedora / openSUSE / RHEL** | `VideoSTAX-v0.9.6-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
 
-I dettagli per ogni sistema sono in [Installazione](#-installazione).
+I dettagli per ogni sistema sono in [Installazione](#installazione).
 
-### ✨ Novità della 0.9.5
+### Novità della 0.9.6
+
+- Le pagine GitHub di VideoSTAX hanno un nuovo indirizzo: **[github.com/kikoz85/videoSTAX](https://github.com/kikoz85/videoSTAX)** (i vecchi link `videostax-releases` reindirizzano ancora qui).
+- Il controllo aggiornamenti dell'app usa direttamente il nuovo indirizzo. Nessun'altra modifica: se hai la 0.9.4 o la 0.9.5, VideoSTAX ti propone da solo questo aggiornamento; oppure usa **Impostazioni → Aggiornamenti → Controlla ora**.
+
+Note complete: [release 0.9.6](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.6).
+
+<details>
+<summary>Novità della 0.9.5</summary>
 
 - Il pulsante **Sostieni lo sviluppo** (GitHub Sponsors) è di nuovo nella finestra Info, raggiungibile anche dal nuovo pulsante ⓘ nella barra su macOS, e in **Impostazioni → Aggiornamenti**.
-- Se hai la 0.9.4, VideoSTAX ti propone da solo questo aggiornamento; oppure usa **Impostazioni → Aggiornamenti → Controlla ora**.
 
 Note complete: [release 0.9.5](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.5).
+
+</details>
 
 <details>
 <summary>Novità della 0.9.4</summary>
@@ -317,7 +326,7 @@ Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag
 
 </details>
 
-### 🖼️ Schermate
+### Schermate
 
 | | |
 | :---: | :---: |
@@ -332,7 +341,7 @@ Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag
 | ![Strumenti inclusi](assets/screenshots/tools-linux.png) | |
 | **Apps**: gli strumenti inclusi e il loro stato | |
 
-### 🧰 Funzionalità
+### Funzionalità
 
 #### Tutto in una schermata
 - Card **Sorgente**: miniatura del video e tutte le informazioni a colpo d'occhio: codec, risoluzione, frame rate, profondità colore, HDR/SDR, durata, dimensione, bitrate, capitoli, numero di tracce audio e sottotitoli.
@@ -352,7 +361,7 @@ Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag
 - Le sorgenti HDR mantengono le informazioni sul colore quando codificate a 10 bit.
 
 #### Codifica
-- Codec **H.264**, **H.265/HEVC** e **AV1** via software (x264, x265, SVT-AV1, libaom) o hardware (vedi [Encoder](#-encoder)); **copia** per mantenere il video originale; **riga di comando** per argomenti FFmpeg personalizzati.
+- Codec **H.264**, **H.265/HEVC** e **AV1** via software (x264, x265, SVT-AV1, libaom) o hardware (vedi [Encoder](#encoder)); **copia** per mantenere il video originale; **riga di comando** per argomenti FFmpeg personalizzati.
 - Contenitori **MKV**, **MP4**, **MOV** e **WebM**.
 - Qualità costante (CRF/qualità) o bitrate (VBR/CBR, 2 passate per x264/x265). Il valore di qualità ha i pulsanti −/+ direttamente nella card Codec.
 - Preset e tune per ogni encoder, più tutte le opzioni avanzate in una finestra con ricerca che mostra la riga di comando risultante.
@@ -391,7 +400,7 @@ Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag
 | F8 | Mostra o nascondi il log (pannello di elaborazione) |
 | Esc | Interrompi il lavoro in corso (pannello di elaborazione) |
 
-### 🚀 Guida rapida
+### Guida rapida
 
 1. **Apri** un video: trascinalo sulla finestra o clicca **Apri**.
 2. Controlla la card **Sorgente**. Clicca la miniatura se vuoi l'anteprima del fotogramma.
@@ -400,7 +409,7 @@ Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag
 5. Se serve, **ridimensiona** o fai il **crop** nella card Resize, e scegli le tracce **audio** e **sottotitoli**.
 6. Guarda il riepilogo in **Destinazione**, poi clicca **Avvia** (oppure **Aggiungi alla coda** per preparare più file e avviarli da **Jobs**).
 
-### 🎛️ Encoder
+### Encoder
 
 Gli encoder hardware sono molto più veloci di quelli software; quelli software di solito producono file più piccoli a parità di qualità. VideoSTAX mostra un encoder hardware solo se il computer ha una scheda video e un driver compatibili.
 
@@ -415,7 +424,7 @@ Gli encoder hardware sono molto più veloci di quelli software; quelli software 
 
 \* La codifica AV1 hardware richiede una scheda video recente che la supporti.
 
-### 💻 Requisiti di sistema
+### Requisiti di sistema
 
 | | macOS | Windows | Linux |
 | :--- | :--- | :--- | :--- |
@@ -427,15 +436,15 @@ Gli encoder hardware sono molto più veloci di quelli software; quelli software 
 
 Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alcune fasi scrivono file temporanei che vengono cancellati alla fine.
 
-### 📦 Installazione
+### Installazione
 
 #### macOS
-1. Apri `VideoSTAX-v0.9.5-macOS.dmg` e trascina **VideoSTAX** in **Applicazioni**.
+1. Apri `VideoSTAX-v0.9.6-macOS.dmg` e trascina **VideoSTAX** in **Applicazioni**.
 2. Al primo avvio macOS potrebbe dire che l'app proviene da uno sviluppatore non identificato. Apri **Impostazioni di Sistema → Privacy e sicurezza** e clicca **Apri comunque** accanto a VideoSTAX.
 3. Le impostazioni sono salvate in `~/Library/Application Support/VideoSTAX`. Per disinstallare, trascina l'app nel Cestino.
 
 #### Windows
-1. Estrai `VideoSTAX-v0.9.5-Windows-x64.zip` in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
+1. Estrai `VideoSTAX-v0.9.6-Windows-x64.zip` in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
 2. Avvia `videostax_ui.exe`. Tieni la cartella completa: la sottocartella `bin` contiene gli strumenti di codifica.
 3. Se SmartScreen mostra un avviso, clicca **Ulteriori informazioni → Esegui comunque**.
 4. Le impostazioni sono salvate in `%APPDATA%\VideoSTAX`. Per disinstallare, elimina la cartella.
@@ -443,17 +452,17 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 #### Linux
 - **AppImage** (qualsiasi distribuzione):
   ```bash
-  chmod +x VideoSTAX-v0.9.5-x86_64.AppImage
-  ./VideoSTAX-v0.9.5-x86_64.AppImage
+  chmod +x VideoSTAX-v0.9.6-x86_64.AppImage
+  ./VideoSTAX-v0.9.6-x86_64.AppImage
   ```
   Se non parte, installa FUSE 2 (`libfuse2` su Ubuntu/Debian) oppure avvialo con `--appimage-extract-and-run`.
-- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v0.9.5-amd64.deb`
-- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v0.9.5-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v0.9.5-x86_64.rpm`
+- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb`
+- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v0.9.6-x86_64.rpm`
 - Con .deb e .rpm VideoSTAX compare nel menu delle applicazioni e si avvia anche con `videostax`. Si rimuove con `sudo apt remove videostax` o `sudo dnf remove videostax`.
 - Le impostazioni sono salvate in `~/.config/VideoSTAX`.
 - Per la codifica hardware serve il driver della scheda video (driver proprietario NVIDIA, oppure Intel/AMD con supporto VAAPI).
 
-### ❓ Domande frequenti
+### Domande frequenti
 
 **Come aggiorno VideoSTAX?**
 Quando esce una nuova versione, VideoSTAX mostra una finestra all'avvio: clicca **Scarica**. Su macOS trascina l'app dal DMG aperto in Applicazioni; su Windows estrai lo ZIP sopra la cartella di VideoSTAX; l'AppImage di Linux si sostituisce da sola (clicca **Riavvia ora**); .deb/.rpm si aprono nell'installer di sistema. Puoi anche usare **Impostazioni → Aggiornamenti → Controlla ora**, oppure scaricare dall'[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest). Le impostazioni vengono mantenute.
@@ -476,22 +485,23 @@ Di default nella stessa cartella della sorgente, con `_enc` aggiunto al nome. Pu
 **Posso chiudere VideoSTAX mentre la coda è in corso?**
 La chiusura interrompe i lavori in corso, ma la coda è salvata: riaprila con **Jobs → Carica** e avviala di nuovo.
 
-### 💖 Sostieni il progetto
+### Sostieni VideoSTAX
 
-VideoSTAX è sviluppato e mantenuto in modo indipendente. Se ti è utile, puoi sostenere nuove funzioni e miglioramenti:
+VideoSTAX è gratuito, senza pubblicità e senza abbonamenti. Se ti è utile, puoi sostenerlo su **[GitHub Sponsors](https://github.com/sponsors/kikoz85)**: le sponsorizzazioni pagano i certificati di firma (niente più avvisi al primo avvio), le macchine di test per i tre sistemi e il tempo per le nuove funzioni.
 
-👉 **[Sostieni VideoSTAX su GitHub](https://github.com/sponsors/kikoz85)**
+<p align="center"><a href="https://github.com/sponsors/kikoz85"><img src="https://img.shields.io/badge/Sostieni%20VideoSTAX-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sostieni VideoSTAX su GitHub"></a></p>
 
-Segnalazioni di bug e suggerimenti sono benvenuti nelle [Issues](https://github.com/kikoz85/videoSTAX/issues).
+Trovi il pulsante **Sostieni lo sviluppo** anche nella finestra Info dell'app e in **Impostazioni → Aggiornamenti**. Segnalazioni di bug e suggerimenti sono benvenuti nelle [Issues](https://github.com/kikoz85/videoSTAX/issues).
 
 ---
 
-## 📄 Licenses · Licenze
+## Licenses · Licenze
 
 VideoSTAX includes third-party open source software (FFmpeg, MKVToolNix, VapourSynth and plugins, Rigaya encoders, Flutter, fonts and others), each under its own license. See **[THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)**; the same notices are in the app's **About** window (**Info** button on Windows and Linux, **VideoSTAX** menu on macOS) under **Third-party licenses**.
 
 VideoSTAX include software open source di terze parti, ognuno con la propria licenza: vedi **[THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)** e, nell'app, la finestra **Informazioni** (pulsante **Info** su Windows e Linux, menu **VideoSTAX** su macOS) alla voce **Licenze di terze parti**.
 
-## ✉️ Contact · Contatti
+---
 
-**Enrico Fanucchi** — [enricofanucchi@gmail.com](mailto:enricofanucchi@gmail.com) · [www.enricofanucchi.com](https://www.enricofanucchi.com)
+<p align="center">© 2026 Enrico Fanucchi · <a href="https://www.enricofanucchi.com">www.enricofanucchi.com</a><br>
+VideoSTAX is free to download and use; third-party components are listed in <a href="THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>.</p>
