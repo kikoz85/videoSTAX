@@ -13,8 +13,8 @@
 
 **Video transcoding studio for macOS, Windows and Linux** · **Studio di transcodifica video per macOS, Windows e Linux**
 
-[![Latest Release](https://img.shields.io/github/v/release/kikoz85/videostax-releases?style=flat-square&color=2b6cb0)](https://github.com/kikoz85/videostax-releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/kikoz85/videostax-releases/total?style=flat-square&color=38a169)](https://github.com/kikoz85/videostax-releases/releases)
+[![Latest Release](https://img.shields.io/github/v/release/kikoz85/videoSTAX?style=flat-square&color=2b6cb0)](https://github.com/kikoz85/videoSTAX/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/kikoz85/videoSTAX/total?style=flat-square&color=38a169)](https://github.com/kikoz85/videoSTAX/releases)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-gray?style=flat-square)](#-download)
 [![Website](https://img.shields.io/badge/website-enricofanucchi.com-F7941D?style=flat-square)](https://www.enricofanucchi.com/en/app/videostax?utm_source=github&utm_campaign=readme)
 
@@ -34,7 +34,7 @@ It uses well-known tools under the hood (FFmpeg, MKVToolNix, VapourSynth) and th
 
 ### 📥 Download
 
-Get the files from the **[latest release](https://github.com/kikoz85/videostax-releases/releases/latest)** (all versions: [Releases page](https://github.com/kikoz85/videostax-releases/releases)).
+Get the files from the **[latest release](https://github.com/kikoz85/videoSTAX/releases/latest)** (all versions: [Releases page](https://github.com/kikoz85/videoSTAX/releases)).
 
 | Platform | File | How to install |
 | :--- | :--- | :--- |
@@ -51,14 +51,14 @@ Details for each system are in [Installation](#-installation).
 - The **Support development** button (GitHub Sponsors) is back in the About window, also reachable with the new ⓘ toolbar button on macOS, and in **Settings → Updates**.
 - If you have 0.9.4, VideoSTAX offers this update by itself; or use **Settings → Updates → Check now**.
 
-Full notes: [release 0.9.5](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.5).
+Full notes: [release 0.9.5](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.5).
 
 <details>
 <summary>What's new in 0.9.4</summary>
 
 - **Updates from the app**: VideoSTAX tells you when a new version is out (checked at startup, at most once a day, never during an encode) and downloads the right file for your system with one click. On Linux the AppImage updates itself; on macOS and Windows the downloaded DMG/ZIP opens so you can replace the app. You can turn it off or check by hand in **Settings → Updates**.
 
-Full notes: [release 0.9.4](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.4).
+Full notes: [release 0.9.4](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.4).
 
 </details>
 
@@ -69,7 +69,7 @@ Full notes: [release 0.9.4](https://github.com/kikoz85/videostax-releases/releas
 - **Accurate remaining time**: the time left and the progress bar (also on the Dock icon) now include the audio encode, so they no longer show "1 s" while the audio is still being processed.
 - **Accurate size estimate**: the expected file size uses the real bitrates of your audio and subtitle tracks.
 
-Full notes: [release 0.9.3](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.3).
+Full notes: [release 0.9.3](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.3).
 
 </details>
 
@@ -82,7 +82,7 @@ Full notes: [release 0.9.3](https://github.com/kikoz85/videostax-releases/releas
 - **Refreshed interface**: main encoder settings directly on the Codec card, advanced options with search and reset, numbered filter steps, recent files, progress in the bottom bar, keyboard shortcuts, improved light theme.
 - Smaller macOS app.
 
-Full notes: [release 0.9.2](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.2).
+Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.2).
 
 </details>
 
@@ -225,7 +225,7 @@ Keep free disk space of at least two to three times the size of the output file:
 ### ❓ FAQ and troubleshooting
 
 **How do I update VideoSTAX?**
-When a new version is out, VideoSTAX shows a window at startup: click **Download**. On macOS drag the app from the opened DMG to Applications; on Windows extract the ZIP over your VideoSTAX folder; the Linux AppImage replaces itself (click **Restart now**); .deb/.rpm open in the system installer. You can also use **Settings → Updates → Check now**, or download from the [latest release](https://github.com/kikoz85/videostax-releases/releases/latest). Your settings are kept.
+When a new version is out, VideoSTAX shows a window at startup: click **Download**. On macOS drag the app from the opened DMG to Applications; on Windows extract the ZIP over your VideoSTAX folder; the Linux AppImage replaces itself (click **Restart now**); .deb/.rpm open in the system installer. You can also use **Settings → Updates → Check now**, or download from the [latest release](https://github.com/kikoz85/videoSTAX/releases/latest). Your settings are kept.
 
 **A hardware encoder is missing from the menu.**
 It appears only when the graphics card and the driver support it. Update the GPU driver and restart VideoSTAX. The **Apps** window shows which tools were found.
@@ -251,7 +251,7 @@ VideoSTAX is developed and maintained independently. If it helps your video work
 
 👉 **[Sponsor VideoSTAX on GitHub](https://github.com/sponsors/kikoz85)**
 
-Bug reports and suggestions are welcome in [Issues](https://github.com/kikoz85/videostax-releases/issues).
+Bug reports and suggestions are welcome in [Issues](https://github.com/kikoz85/videoSTAX/issues).
 
 ---
 
@@ -265,7 +265,7 @@ Usa strumenti affermati (FFmpeg, MKVToolNix, VapourSynth) e, quando disponibili,
 
 ### 📥 Download
 
-Scarica i file dall'**[ultima release](https://github.com/kikoz85/videostax-releases/releases/latest)** (tutte le versioni: [pagina Releases](https://github.com/kikoz85/videostax-releases/releases)).
+Scarica i file dall'**[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest)** (tutte le versioni: [pagina Releases](https://github.com/kikoz85/videoSTAX/releases)).
 
 | Piattaforma | File | Come installare |
 | :--- | :--- | :--- |
@@ -282,14 +282,14 @@ I dettagli per ogni sistema sono in [Installazione](#-installazione).
 - Il pulsante **Sostieni lo sviluppo** (GitHub Sponsors) è di nuovo nella finestra Info, raggiungibile anche dal nuovo pulsante ⓘ nella barra su macOS, e in **Impostazioni → Aggiornamenti**.
 - Se hai la 0.9.4, VideoSTAX ti propone da solo questo aggiornamento; oppure usa **Impostazioni → Aggiornamenti → Controlla ora**.
 
-Note complete: [release 0.9.5](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.5).
+Note complete: [release 0.9.5](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.5).
 
 <details>
 <summary>Novità della 0.9.4</summary>
 
 - **Aggiornamenti dall'app**: VideoSTAX ti avvisa quando esce una nuova versione (controllo all'avvio, al massimo una volta al giorno, mai durante una codifica) e scarica con un clic il file giusto per il tuo sistema. Su Linux l'AppImage si aggiorna da sola; su macOS e Windows si apre il DMG/ZIP scaricato per sostituire l'app. Puoi disattivarlo o controllare a mano da **Impostazioni → Aggiornamenti**.
 
-Note complete: [release 0.9.4](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.4).
+Note complete: [release 0.9.4](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.4).
 
 </details>
 
@@ -300,7 +300,7 @@ Note complete: [release 0.9.4](https://github.com/kikoz85/videostax-releases/rel
 - **Tempo rimanente preciso**: tempo rimanente e barra di avanzamento (anche sull'icona nel Dock) includono ora la codifica dell'audio, quindi non mostrano più "1 s" mentre l'audio è ancora in lavorazione.
 - **Stima della dimensione precisa**: la dimensione prevista del file usa i bitrate reali delle tracce audio e dei sottotitoli.
 
-Note complete: [release 0.9.3](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.3).
+Note complete: [release 0.9.3](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.3).
 
 </details>
 
@@ -313,7 +313,7 @@ Note complete: [release 0.9.3](https://github.com/kikoz85/videostax-releases/rel
 - **Interfaccia rinnovata**: impostazioni principali dell'encoder direttamente nella card Codec, opzioni avanzate con ricerca e ripristino, filtri numerati, file recenti, avanzamento nella barra in basso, scorciatoie da tastiera, tema chiaro migliorato.
 - App per macOS più leggera.
 
-Note complete: [release 0.9.2](https://github.com/kikoz85/videostax-releases/releases/tag/v0.9.2).
+Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.2).
 
 </details>
 
@@ -456,7 +456,7 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 ### ❓ Domande frequenti
 
 **Come aggiorno VideoSTAX?**
-Quando esce una nuova versione, VideoSTAX mostra una finestra all'avvio: clicca **Scarica**. Su macOS trascina l'app dal DMG aperto in Applicazioni; su Windows estrai lo ZIP sopra la cartella di VideoSTAX; l'AppImage di Linux si sostituisce da sola (clicca **Riavvia ora**); .deb/.rpm si aprono nell'installer di sistema. Puoi anche usare **Impostazioni → Aggiornamenti → Controlla ora**, oppure scaricare dall'[ultima release](https://github.com/kikoz85/videostax-releases/releases/latest). Le impostazioni vengono mantenute.
+Quando esce una nuova versione, VideoSTAX mostra una finestra all'avvio: clicca **Scarica**. Su macOS trascina l'app dal DMG aperto in Applicazioni; su Windows estrai lo ZIP sopra la cartella di VideoSTAX; l'AppImage di Linux si sostituisce da sola (clicca **Riavvia ora**); .deb/.rpm si aprono nell'installer di sistema. Puoi anche usare **Impostazioni → Aggiornamenti → Controlla ora**, oppure scaricare dall'[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest). Le impostazioni vengono mantenute.
 
 **Nel menu manca un encoder hardware.**
 Compare solo se la scheda video e il driver lo supportano. Aggiorna il driver e riavvia VideoSTAX. La finestra **Apps** mostra quali strumenti sono stati trovati.
@@ -482,7 +482,7 @@ VideoSTAX è sviluppato e mantenuto in modo indipendente. Se ti è utile, puoi s
 
 👉 **[Sostieni VideoSTAX su GitHub](https://github.com/sponsors/kikoz85)**
 
-Segnalazioni di bug e suggerimenti sono benvenuti nelle [Issues](https://github.com/kikoz85/videostax-releases/issues).
+Segnalazioni di bug e suggerimenti sono benvenuti nelle [Issues](https://github.com/kikoz85/videoSTAX/issues).
 
 ---
 
