@@ -3,7 +3,7 @@
 <h1 align="center">VideoSTAX</h1>
 
 <p align="center"><b>Video transcoding studio — compress and convert videos, one file or a whole queue.</b><br>
-free · no subscriptions · macOS · Windows · Linux</p>
+free · no subscriptions · macOS · Windows · Linux · x64 and ARM64</p>
 
 <p align="center">
 <a href="https://github.com/kikoz85/videoSTAX/releases/latest"><img src="https://img.shields.io/github/v/release/kikoz85/videoSTAX?label=download&color=2B6CB0" alt="Download"></a>
@@ -31,20 +31,37 @@ Get the files from the **[latest release](https://github.com/kikoz85/videoSTAX/r
 
 | Platform | File | How to install |
 | :--- | :--- | :--- |
-| **macOS** (Apple Silicon) | `VideoSTAX-v0.9.6-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
-| **Windows 10/11** (64-bit) | `VideoSTAX-v0.9.6-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
-| **Linux** (any distribution, x86_64) | `VideoSTAX-v0.9.6-x86_64.AppImage` | `chmod +x` the file and run it |
-| **Debian / Ubuntu / Mint** | `VideoSTAX-v0.9.6-amd64.deb` | `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb` |
-| **Fedora / openSUSE / RHEL** | `VideoSTAX-v0.9.6-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **macOS** (Apple Silicon) | `VideoSTAX-v1.0.0-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
+| **Windows 10/11** (x64) | `VideoSTAX-v1.0.0-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
+| **Windows 11 on ARM** | `VideoSTAX-v1.0.0-Windows-arm64.zip` | Extract the folder and run `videostax_ui.exe` |
+| **Linux** (any distribution, x86_64) | `VideoSTAX-v1.0.0-x86_64.AppImage` | `chmod +x` the file and run it |
+| **Debian / Ubuntu / Mint** | `VideoSTAX-v1.0.0-amd64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb` |
+| **Fedora / openSUSE / RHEL** | `VideoSTAX-v1.0.0-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **Linux ARM64** (any distribution) | `VideoSTAX-v1.0.0-aarch64.AppImage` | `chmod +x` the file and run it |
+| **Debian / Ubuntu ARM64** | `VideoSTAX-v1.0.0-arm64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-arm64.deb` |
+| **Fedora / openSUSE ARM64** | `VideoSTAX-v1.0.0-aarch64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-aarch64.rpm` |
 
 Details for each system are in [Installation](#installation).
 
-### What's new in 0.9.6
+### What's new in 1.0.0
+
+- **VideoSTAX 1.0 runs on every desktop**: besides macOS (Apple Silicon), Windows x64 and Linux x86_64, there are now native builds for **Windows on ARM** and **Linux ARM64** (AppImage, .deb, .rpm).
+- On Windows ARM the interface, the engine and FFmpeg are native ARM64; mkvmerge and VapourSynth run through Windows' built-in x64 emulation.
+- **Hardware encoding on ARM**: Media Foundation uses the GPU encoder of Snapdragon PCs (and of Intel, AMD and NVIDIA GPUs on x64); V4L2 uses the encoder of Linux ARM boards. They appear in the menu only when they work on your computer.
+- **VapourSynth filters on Linux** (deinterlacing, noise reduction) now work out of the box: the packages include the ffms2 source plugin.
+- The in-app update downloads the package for your architecture (x64 or ARM64).
+
+Full notes: [release 1.0.0](https://github.com/kikoz85/videoSTAX/releases/tag/v1.0.0).
+
+<details>
+<summary>What's new in 0.9.6</summary>
 
 - VideoSTAX's GitHub pages have a new address: **[github.com/kikoz85/videoSTAX](https://github.com/kikoz85/videoSTAX)** (the old `videostax-releases` links still redirect here).
 - The in-app update check uses the new address directly. No other change: if you have 0.9.4 or 0.9.5, VideoSTAX offers this update by itself; or use **Settings → Updates → Check now**.
 
 Full notes: [release 0.9.6](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.6).
+
+</details>
 
 <details>
 <summary>What's new in 0.9.5</summary>
@@ -183,16 +200,18 @@ Hardware encoders are much faster than software ones; software encoders usually 
 | Intel Quick Sync (QSVEncC) | — | ✅ | ✅ | H.264, H.265, AV1* |
 | AMD VCE/AMF (VCEEncC) | — | ✅ | ✅ | H.264, H.265, AV1* |
 | VAAPI | — | — | ✅ | H.264, H.265 |
+| Media Foundation (GPU, incl. Windows on ARM) | — | ✅ | — | H.264, H.265, AV1* |
+| V4L2 (ARM boards: Raspberry Pi 4, Allwinner, Amlogic, NXP …) | — | — | ✅ | H.264, H.265 |
 
-\* AV1 hardware encoding requires a recent GPU that supports it.
+\* AV1 hardware encoding requires a recent GPU that supports it. NVEncC, QSVEncC and VCEEncC are included in the x64 builds only; on ARM use Media Foundation (Windows) or V4L2/VAAPI (Linux).
 
 ### System requirements
 
 | | macOS | Windows | Linux |
 | :--- | :--- | :--- | :--- |
-| **System** | macOS 27 or later, Apple Silicon (M1 or newer) | Windows 10 or 11, 64-bit | 64-bit distribution from the last few years (e.g. Ubuntu 22.04+, Fedora 38+) |
+| **System** | macOS 27 or later, Apple Silicon (M1 or newer) | Windows 10 or 11 x64, or Windows 11 on ARM64 | x86_64 or ARM64 distribution from the last few years (e.g. Ubuntu 22.04+, Debian 12+, Fedora 38+) |
 | **Memory** | 8 GB (16 GB recommended) | 8 GB (16 GB recommended) | 8 GB (16 GB recommended) |
-| **Disk** | about 250 MB for the app | about 700 MB for the extracted folder | about 1.1 GB installed |
+| **Disk** | about 250 MB for the app | about 700 MB extracted (ARM64: about 270 MB) | about 1.1 GB installed (ARM64: about 300 MB) |
 | **Display** | 1280×800 or larger | 1280×800 or larger | 1280×800 or larger, X11 or Wayland |
 | **Hardware encoding** | built into every Apple Silicon Mac | NVIDIA, Intel or AMD GPU with up-to-date drivers | NVIDIA, Intel or AMD GPU with up-to-date drivers |
 
@@ -201,12 +220,12 @@ Keep free disk space of at least two to three times the size of the output file:
 ### Installation
 
 #### macOS
-1. Open `VideoSTAX-v0.9.6-macOS.dmg` and drag **VideoSTAX** into **Applications**.
+1. Open `VideoSTAX-v1.0.0-macOS.dmg` and drag **VideoSTAX** into **Applications**.
 2. The first time, macOS may say the app is from an unidentified developer. Open **System Settings → Privacy & Security** and click **Open Anyway** next to VideoSTAX.
 3. Settings are stored in `~/Library/Application Support/VideoSTAX`. To uninstall, drag the app to the Trash.
 
 #### Windows
-1. Extract `VideoSTAX-v0.9.6-Windows-x64.zip` to a folder of your choice (for example `C:\Programs\VideoSTAX`).
+1. Extract `VideoSTAX-v1.0.0-Windows-x64.zip` (or `-Windows-arm64.zip` on Windows on ARM) to a folder of your choice (for example `C:\Programs\VideoSTAX`).
 2. Run `videostax_ui.exe`. Keep the whole folder together: the `bin` folder contains the encoding tools.
 3. If SmartScreen shows a warning, click **More info → Run anyway**.
 4. Settings are stored in `%APPDATA%\VideoSTAX`. To uninstall, delete the folder.
@@ -214,13 +233,14 @@ Keep free disk space of at least two to three times the size of the output file:
 #### Linux
 - **AppImage** (any distribution):
   ```bash
-  chmod +x VideoSTAX-v0.9.6-x86_64.AppImage
-  ./VideoSTAX-v0.9.6-x86_64.AppImage
+  chmod +x VideoSTAX-v1.0.0-x86_64.AppImage
+  ./VideoSTAX-v1.0.0-x86_64.AppImage
   ```
   If it does not start, install FUSE 2 (`libfuse2` on Ubuntu/Debian) or run it with `--appimage-extract-and-run`.
-- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb`
-- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v0.9.6-x86_64.rpm`
+- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb`
+- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v1.0.0-x86_64.rpm`
 - With .deb and .rpm, VideoSTAX appears in the application menu and can be started with `videostax`. It is removed with `sudo apt remove videostax` or `sudo dnf remove videostax`.
+- On ARM64 computers use the `aarch64.AppImage`, `arm64.deb` or `aarch64.rpm` file instead.
 - Settings are stored in `~/.config/VideoSTAX`.
 - For hardware encoding, the GPU driver must be installed (NVIDIA proprietary driver, or Intel/AMD with VAAPI support).
 
@@ -269,20 +289,37 @@ Scarica i file dall'**[ultima release](https://github.com/kikoz85/videoSTAX/rele
 
 | Piattaforma | File | Come installare |
 | :--- | :--- | :--- |
-| **macOS** (Apple Silicon) | `VideoSTAX-v0.9.6-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
-| **Windows 10/11** (64 bit) | `VideoSTAX-v0.9.6-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
-| **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v0.9.6-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
-| **Debian / Ubuntu / Mint** | `VideoSTAX-v0.9.6-amd64.deb` | `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb` |
-| **Fedora / openSUSE / RHEL** | `VideoSTAX-v0.9.6-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **macOS** (Apple Silicon) | `VideoSTAX-v1.0.0-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
+| **Windows 10/11** (x64) | `VideoSTAX-v1.0.0-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
+| **Windows 11 su ARM** | `VideoSTAX-v1.0.0-Windows-arm64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
+| **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v1.0.0-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
+| **Debian / Ubuntu / Mint** | `VideoSTAX-v1.0.0-amd64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb` |
+| **Fedora / openSUSE / RHEL** | `VideoSTAX-v1.0.0-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **Linux ARM64** (qualsiasi distribuzione) | `VideoSTAX-v1.0.0-aarch64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
+| **Debian / Ubuntu ARM64** | `VideoSTAX-v1.0.0-arm64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-arm64.deb` |
+| **Fedora / openSUSE ARM64** | `VideoSTAX-v1.0.0-aarch64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-aarch64.rpm` |
 
 I dettagli per ogni sistema sono in [Installazione](#installazione).
 
-### Novità della 0.9.6
+### Novità della 1.0.0
+
+- **VideoSTAX 1.0 gira su tutti i computer**: oltre a macOS (Apple Silicon), Windows x64 e Linux x86_64 ci sono ora le versioni native per **Windows su ARM** e **Linux ARM64** (AppImage, .deb, .rpm).
+- Su Windows ARM interfaccia, motore e FFmpeg sono nativi ARM64; mkvmerge e VapourSynth usano l'emulazione x64 integrata in Windows.
+- **Codifica hardware anche su ARM**: Media Foundation usa l'encoder della GPU dei PC Snapdragon (e delle GPU Intel, AMD e NVIDIA su x64); V4L2 usa l'encoder delle schede Linux ARM. Compaiono nel menu solo se funzionano sul tuo computer.
+- **Filtri VapourSynth su Linux** (deinterlacciamento, riduzione del rumore) funzionano subito: i pacchetti includono il plugin ffms2.
+- L'aggiornamento dall'app scarica il pacchetto della tua architettura (x64 o ARM64).
+
+Note complete: [release 1.0.0](https://github.com/kikoz85/videoSTAX/releases/tag/v1.0.0).
+
+<details>
+<summary>Novità della 0.9.6</summary>
 
 - Le pagine GitHub di VideoSTAX hanno un nuovo indirizzo: **[github.com/kikoz85/videoSTAX](https://github.com/kikoz85/videoSTAX)** (i vecchi link `videostax-releases` reindirizzano ancora qui).
 - Il controllo aggiornamenti dell'app usa direttamente il nuovo indirizzo. Nessun'altra modifica: se hai la 0.9.4 o la 0.9.5, VideoSTAX ti propone da solo questo aggiornamento; oppure usa **Impostazioni → Aggiornamenti → Controlla ora**.
 
 Note complete: [release 0.9.6](https://github.com/kikoz85/videoSTAX/releases/tag/v0.9.6).
+
+</details>
 
 <details>
 <summary>Novità della 0.9.5</summary>
@@ -421,16 +458,18 @@ Gli encoder hardware sono molto più veloci di quelli software; quelli software 
 | Intel Quick Sync (QSVEncC) | — | ✅ | ✅ | H.264, H.265, AV1* |
 | AMD VCE/AMF (VCEEncC) | — | ✅ | ✅ | H.264, H.265, AV1* |
 | VAAPI | — | — | ✅ | H.264, H.265 |
+| Media Foundation (GPU, anche Windows su ARM) | — | ✅ | — | H.264, H.265, AV1* |
+| V4L2 (schede ARM: Raspberry Pi 4, Allwinner, Amlogic, NXP …) | — | — | ✅ | H.264, H.265 |
 
-\* La codifica AV1 hardware richiede una scheda video recente che la supporti.
+\* La codifica AV1 hardware richiede una scheda video recente che la supporti. NVEncC, QSVEncC e VCEEncC sono inclusi solo nelle versioni x64; su ARM si usano Media Foundation (Windows) o V4L2/VAAPI (Linux).
 
 ### Requisiti di sistema
 
 | | macOS | Windows | Linux |
 | :--- | :--- | :--- | :--- |
-| **Sistema** | macOS 27 o successivo, Apple Silicon (M1 o più recente) | Windows 10 o 11, 64 bit | Distribuzione a 64 bit degli ultimi anni (es. Ubuntu 22.04+, Fedora 38+) |
+| **Sistema** | macOS 27 o successivo, Apple Silicon (M1 o più recente) | Windows 10 o 11 x64, oppure Windows 11 su ARM64 | Distribuzione x86_64 o ARM64 degli ultimi anni (es. Ubuntu 22.04+, Debian 12+, Fedora 38+) |
 | **Memoria** | 8 GB (consigliati 16 GB) | 8 GB (consigliati 16 GB) | 8 GB (consigliati 16 GB) |
-| **Disco** | circa 250 MB per l'app | circa 700 MB per la cartella estratta | circa 1,1 GB installato |
+| **Disco** | circa 250 MB per l'app | circa 700 MB estratto (ARM64: circa 270 MB) | circa 1,1 GB installato (ARM64: circa 300 MB) |
 | **Schermo** | 1280×800 o superiore | 1280×800 o superiore | 1280×800 o superiore, X11 o Wayland |
 | **Codifica hardware** | integrata in ogni Mac Apple Silicon | scheda NVIDIA, Intel o AMD con driver aggiornati | scheda NVIDIA, Intel o AMD con driver aggiornati |
 
@@ -439,12 +478,12 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 ### Installazione
 
 #### macOS
-1. Apri `VideoSTAX-v0.9.6-macOS.dmg` e trascina **VideoSTAX** in **Applicazioni**.
+1. Apri `VideoSTAX-v1.0.0-macOS.dmg` e trascina **VideoSTAX** in **Applicazioni**.
 2. Al primo avvio macOS potrebbe dire che l'app proviene da uno sviluppatore non identificato. Apri **Impostazioni di Sistema → Privacy e sicurezza** e clicca **Apri comunque** accanto a VideoSTAX.
 3. Le impostazioni sono salvate in `~/Library/Application Support/VideoSTAX`. Per disinstallare, trascina l'app nel Cestino.
 
 #### Windows
-1. Estrai `VideoSTAX-v0.9.6-Windows-x64.zip` in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
+1. Estrai `VideoSTAX-v1.0.0-Windows-x64.zip` (oppure `-Windows-arm64.zip` su Windows ARM) in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
 2. Avvia `videostax_ui.exe`. Tieni la cartella completa: la sottocartella `bin` contiene gli strumenti di codifica.
 3. Se SmartScreen mostra un avviso, clicca **Ulteriori informazioni → Esegui comunque**.
 4. Le impostazioni sono salvate in `%APPDATA%\VideoSTAX`. Per disinstallare, elimina la cartella.
@@ -452,13 +491,14 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 #### Linux
 - **AppImage** (qualsiasi distribuzione):
   ```bash
-  chmod +x VideoSTAX-v0.9.6-x86_64.AppImage
-  ./VideoSTAX-v0.9.6-x86_64.AppImage
+  chmod +x VideoSTAX-v1.0.0-x86_64.AppImage
+  ./VideoSTAX-v1.0.0-x86_64.AppImage
   ```
   Se non parte, installa FUSE 2 (`libfuse2` su Ubuntu/Debian) oppure avvialo con `--appimage-extract-and-run`.
-- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v0.9.6-amd64.deb`
-- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v0.9.6-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v0.9.6-x86_64.rpm`
+- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb`
+- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v1.0.0-x86_64.rpm`
 - Con .deb e .rpm VideoSTAX compare nel menu delle applicazioni e si avvia anche con `videostax`. Si rimuove con `sudo apt remove videostax` o `sudo dnf remove videostax`.
+- Sui computer ARM64 usa invece il file `aarch64.AppImage`, `arm64.deb` o `aarch64.rpm`.
 - Le impostazioni sono salvate in `~/.config/VideoSTAX`.
 - Per la codifica hardware serve il driver della scheda video (driver proprietario NVIDIA, oppure Intel/AMD con supporto VAAPI).
 
