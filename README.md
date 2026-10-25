@@ -116,7 +116,7 @@ Full notes: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag/v0
 | ![Audio tracks](assets/screenshots/audio-tracks-linux.png) | ![Processing](assets/screenshots/processing-linux.png) |
 | **Audio tracks**: copy or convert each track | **Processing**: speed, bitrate, time left and log |
 | ![Job queue](assets/screenshots/jobs-linux.png) | ![Settings](assets/screenshots/settings-linux.png) |
-| **Jobs**: queue, order, start and per-job log | **Settings**: theme, languages, performance |
+| **Jobs**: queue, order, start and per-job log | **Settings**: languages, performance, update check |
 | ![Bundled tools](assets/screenshots/tools-linux.png) | |
 | **Apps**: the bundled tools and their status | |
 
@@ -374,7 +374,7 @@ Note complete: [release 0.9.2](https://github.com/kikoz85/videoSTAX/releases/tag
 | ![Tracce audio](assets/screenshots/audio-tracks-linux.png) | ![Elaborazione](assets/screenshots/processing-linux.png) |
 | **Tracce audio**: copia o converti ogni traccia | **Elaborazione**: velocità, bitrate, tempo rimanente e log |
 | ![Coda lavori](assets/screenshots/jobs-linux.png) | ![Impostazioni](assets/screenshots/settings-linux.png) |
-| **Jobs**: coda, ordine, avvio e log per ogni lavoro | **Impostazioni**: tema, lingue, prestazioni |
+| **Jobs**: coda, ordine, avvio e log per ogni lavoro | **Impostazioni**: lingue, prestazioni, controllo aggiornamenti |
 | ![Strumenti inclusi](assets/screenshots/tools-linux.png) | |
 | **Apps**: gli strumenti inclusi e il loro stato | |
 
