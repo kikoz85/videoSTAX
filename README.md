@@ -31,17 +31,24 @@ Get the files from the **[latest release](https://github.com/kikoz85/videoSTAX/r
 
 | Platform | File | How to install |
 | :--- | :--- | :--- |
-| **macOS** (Apple Silicon) | `VideoSTAX-v1.0.0-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
-| **Windows 10/11** (x64) | `VideoSTAX-v1.0.0-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
-| **Windows 11 on ARM** | `VideoSTAX-v1.0.0-Windows-arm64.zip` | Extract the folder and run `videostax_ui.exe` |
-| **Linux** (any distribution, x86_64) | `VideoSTAX-v1.0.0-x86_64.AppImage` | `chmod +x` the file and run it |
-| **Debian / Ubuntu / Mint** | `VideoSTAX-v1.0.0-amd64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb` |
-| **Fedora / openSUSE / RHEL** | `VideoSTAX-v1.0.0-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
-| **Linux ARM64** (any distribution) | `VideoSTAX-v1.0.0-aarch64.AppImage` | `chmod +x` the file and run it |
-| **Debian / Ubuntu ARM64** | `VideoSTAX-v1.0.0-arm64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-arm64.deb` |
-| **Fedora / openSUSE ARM64** | `VideoSTAX-v1.0.0-aarch64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-aarch64.rpm` |
+| **macOS** (Apple Silicon) | `VideoSTAX-v1.0.1-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
+| **Windows 10/11** (x64) | `VideoSTAX-v1.0.1-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
+| **Windows 11 on ARM** | `VideoSTAX-v1.0.1-Windows-arm64.zip` | Extract the folder and run `videostax_ui.exe` |
+| **Linux** (any distribution, x86_64) | `VideoSTAX-v1.0.1-x86_64.AppImage` | `chmod +x` the file and run it |
+| **Debian / Ubuntu / Mint** | `VideoSTAX-v1.0.1-amd64.deb` | `sudo apt install ./VideoSTAX-v1.0.1-amd64.deb` |
+| **Fedora / openSUSE / RHEL** | `VideoSTAX-v1.0.1-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.1-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **Linux ARM64** (any distribution) | `VideoSTAX-v1.0.1-aarch64.AppImage` | `chmod +x` the file and run it |
+| **Debian / Ubuntu ARM64** | `VideoSTAX-v1.0.1-arm64.deb` | `sudo apt install ./VideoSTAX-v1.0.1-arm64.deb` |
+| **Fedora / openSUSE ARM64** | `VideoSTAX-v1.0.1-aarch64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.1-aarch64.rpm` |
 
 Details for each system are in [Installation](#installation).
+
+### What's new in 1.0.1
+
+- The macOS app is now **signed with an Apple Developer ID and notarized by Apple**: it opens with a double click, without going through Privacy & Security → Open Anyway.
+- Same features as 1.0.0 on every system. If you have 0.9.4 or later, VideoSTAX offers the update by itself.
+
+Full notes: [release 1.0.1](https://github.com/kikoz85/videoSTAX/releases/tag/v1.0.1).
 
 ### What's new in 1.0.0
 
@@ -220,12 +227,12 @@ Keep free disk space of at least two to three times the size of the output file:
 ### Installation
 
 #### macOS
-1. Open `VideoSTAX-v1.0.0-macOS.dmg` and drag **VideoSTAX** into **Applications**.
-2. The first time, macOS may say the app is from an unidentified developer. Open **System Settings → Privacy & Security** and click **Open Anyway** next to VideoSTAX.
+1. Open `VideoSTAX-v1.0.1-macOS.dmg` and drag **VideoSTAX** into **Applications**.
+2. Open VideoSTAX from Applications. The app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it without warnings.
 3. Settings are stored in `~/Library/Application Support/VideoSTAX`. To uninstall, drag the app to the Trash.
 
 #### Windows
-1. Extract `VideoSTAX-v1.0.0-Windows-x64.zip` (or `-Windows-arm64.zip` on Windows on ARM) to a folder of your choice (for example `C:\Programs\VideoSTAX`).
+1. Extract `VideoSTAX-v1.0.1-Windows-x64.zip` (or `-Windows-arm64.zip` on Windows on ARM) to a folder of your choice (for example `C:\Programs\VideoSTAX`).
 2. Run `videostax_ui.exe`. Keep the whole folder together: the `bin` folder contains the encoding tools.
 3. If SmartScreen shows a warning, click **More info → Run anyway**.
 4. Settings are stored in `%APPDATA%\VideoSTAX`. To uninstall, delete the folder.
@@ -233,12 +240,12 @@ Keep free disk space of at least two to three times the size of the output file:
 #### Linux
 - **AppImage** (any distribution):
   ```bash
-  chmod +x VideoSTAX-v1.0.0-x86_64.AppImage
-  ./VideoSTAX-v1.0.0-x86_64.AppImage
+  chmod +x VideoSTAX-v1.0.1-x86_64.AppImage
+  ./VideoSTAX-v1.0.1-x86_64.AppImage
   ```
   If it does not start, install FUSE 2 (`libfuse2` on Ubuntu/Debian) or run it with `--appimage-extract-and-run`.
-- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb`
-- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v1.0.0-x86_64.rpm`
+- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v1.0.1-amd64.deb`
+- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v1.0.1-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v1.0.1-x86_64.rpm`
 - With .deb and .rpm, VideoSTAX appears in the application menu and can be started with `videostax`. It is removed with `sudo apt remove videostax` or `sudo dnf remove videostax`.
 - On ARM64 computers use the `aarch64.AppImage`, `arm64.deb` or `aarch64.rpm` file instead.
 - Settings are stored in `~/.config/VideoSTAX`.
@@ -289,17 +296,24 @@ Scarica i file dall'**[ultima release](https://github.com/kikoz85/videoSTAX/rele
 
 | Piattaforma | File | Come installare |
 | :--- | :--- | :--- |
-| **macOS** (Apple Silicon) | `VideoSTAX-v1.0.0-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
-| **Windows 10/11** (x64) | `VideoSTAX-v1.0.0-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
-| **Windows 11 su ARM** | `VideoSTAX-v1.0.0-Windows-arm64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
-| **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v1.0.0-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
-| **Debian / Ubuntu / Mint** | `VideoSTAX-v1.0.0-amd64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb` |
-| **Fedora / openSUSE / RHEL** | `VideoSTAX-v1.0.0-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
-| **Linux ARM64** (qualsiasi distribuzione) | `VideoSTAX-v1.0.0-aarch64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
-| **Debian / Ubuntu ARM64** | `VideoSTAX-v1.0.0-arm64.deb` | `sudo apt install ./VideoSTAX-v1.0.0-arm64.deb` |
-| **Fedora / openSUSE ARM64** | `VideoSTAX-v1.0.0-aarch64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.0-aarch64.rpm` |
+| **macOS** (Apple Silicon) | `VideoSTAX-v1.0.1-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
+| **Windows 10/11** (x64) | `VideoSTAX-v1.0.1-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
+| **Windows 11 su ARM** | `VideoSTAX-v1.0.1-Windows-arm64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
+| **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v1.0.1-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
+| **Debian / Ubuntu / Mint** | `VideoSTAX-v1.0.1-amd64.deb` | `sudo apt install ./VideoSTAX-v1.0.1-amd64.deb` |
+| **Fedora / openSUSE / RHEL** | `VideoSTAX-v1.0.1-x86_64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.1-x86_64.rpm` (openSUSE: `sudo zypper install …`) |
+| **Linux ARM64** (qualsiasi distribuzione) | `VideoSTAX-v1.0.1-aarch64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
+| **Debian / Ubuntu ARM64** | `VideoSTAX-v1.0.1-arm64.deb` | `sudo apt install ./VideoSTAX-v1.0.1-arm64.deb` |
+| **Fedora / openSUSE ARM64** | `VideoSTAX-v1.0.1-aarch64.rpm` | `sudo dnf install ./VideoSTAX-v1.0.1-aarch64.rpm` |
 
 I dettagli per ogni sistema sono in [Installazione](#installazione).
+
+### Novità della 1.0.1
+
+- L'app macOS è ora **firmata con un Apple Developer ID e notarizzata da Apple**: si apre con un doppio clic, senza passare da Privacy e sicurezza → Apri comunque.
+- Stesse funzioni della 1.0.0 su tutti i sistemi. Dalla 0.9.4 in poi VideoSTAX propone l'aggiornamento da solo.
+
+Note complete: [release 1.0.1](https://github.com/kikoz85/videoSTAX/releases/tag/v1.0.1).
 
 ### Novità della 1.0.0
 
@@ -478,12 +492,12 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 ### Installazione
 
 #### macOS
-1. Apri `VideoSTAX-v1.0.0-macOS.dmg` e trascina **VideoSTAX** in **Applicazioni**.
-2. Al primo avvio macOS potrebbe dire che l'app proviene da uno sviluppatore non identificato. Apri **Impostazioni di Sistema → Privacy e sicurezza** e clicca **Apri comunque** accanto a VideoSTAX.
+1. Apri `VideoSTAX-v1.0.1-macOS.dmg` e trascina **VideoSTAX** in **Applicazioni**.
+2. Avvia VideoSTAX da Applicazioni. L'app è firmata con un Apple Developer ID e notarizzata da Apple: macOS la apre senza avvisi.
 3. Le impostazioni sono salvate in `~/Library/Application Support/VideoSTAX`. Per disinstallare, trascina l'app nel Cestino.
 
 #### Windows
-1. Estrai `VideoSTAX-v1.0.0-Windows-x64.zip` (oppure `-Windows-arm64.zip` su Windows ARM) in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
+1. Estrai `VideoSTAX-v1.0.1-Windows-x64.zip` (oppure `-Windows-arm64.zip` su Windows ARM) in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
 2. Avvia `videostax_ui.exe`. Tieni la cartella completa: la sottocartella `bin` contiene gli strumenti di codifica.
 3. Se SmartScreen mostra un avviso, clicca **Ulteriori informazioni → Esegui comunque**.
 4. Le impostazioni sono salvate in `%APPDATA%\VideoSTAX`. Per disinstallare, elimina la cartella.
@@ -491,12 +505,12 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 #### Linux
 - **AppImage** (qualsiasi distribuzione):
   ```bash
-  chmod +x VideoSTAX-v1.0.0-x86_64.AppImage
-  ./VideoSTAX-v1.0.0-x86_64.AppImage
+  chmod +x VideoSTAX-v1.0.1-x86_64.AppImage
+  ./VideoSTAX-v1.0.1-x86_64.AppImage
   ```
   Se non parte, installa FUSE 2 (`libfuse2` su Ubuntu/Debian) oppure avvialo con `--appimage-extract-and-run`.
-- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v1.0.0-amd64.deb`
-- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v1.0.0-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v1.0.0-x86_64.rpm`
+- **.deb** (Debian, Ubuntu, Mint): `sudo apt install ./VideoSTAX-v1.0.1-amd64.deb`
+- **.rpm** (Fedora, RHEL): `sudo dnf install ./VideoSTAX-v1.0.1-x86_64.rpm` · openSUSE: `sudo zypper install ./VideoSTAX-v1.0.1-x86_64.rpm`
 - Con .deb e .rpm VideoSTAX compare nel menu delle applicazioni e si avvia anche con `videostax`. Si rimuove con `sudo apt remove videostax` o `sudo dnf remove videostax`.
 - Sui computer ARM64 usa invece il file `aarch64.AppImage`, `arm64.deb` o `aarch64.rpm`.
 - Le impostazioni sono salvate in `~/.config/VideoSTAX`.
