@@ -8,6 +8,7 @@ free · no subscriptions · macOS · Windows · Linux · x64 and ARM64</p>
 <p align="center">
 <a href="https://github.com/kikoz85/videoSTAX/releases/latest"><img src="https://img.shields.io/github/v/release/kikoz85/videoSTAX?label=download&color=2B6CB0" alt="Download"></a>
 <a href="https://github.com/kikoz85/videoSTAX/releases"><img src="https://img.shields.io/github/downloads/kikoz85/videoSTAX/total?color=38A169" alt="Downloads"></a>
+<a href="https://apps.microsoft.com/detail/9NN8LH8CW9CX"><img src="https://img.shields.io/badge/Microsoft%20Store-get%20it-0078D4?logo=microsoft&logoColor=white" alt="Get it from the Microsoft Store"></a>
 <a href="https://www.enricofanucchi.com/en/app/videostax?utm_source=github&utm_campaign=readme"><img src="https://img.shields.io/badge/website-enricofanucchi.com-F7941D" alt="Website"></a>
 <a href="https://github.com/sponsors/kikoz85"><img src="https://img.shields.io/badge/sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white" alt="Sponsor VideoSTAX"></a>
 <img src="https://img.shields.io/badge/macOS%20%C2%B7%20Windows%20%C2%B7%20Linux-FF6B35" alt="macOS · Windows · Linux">
@@ -27,11 +28,12 @@ It uses well-known tools under the hood (FFmpeg, MKVToolNix, VapourSynth) and th
 
 ### Download
 
-Get the files from the **[latest release](https://github.com/kikoz85/videoSTAX/releases/latest)** (all versions: [Releases page](https://github.com/kikoz85/videoSTAX/releases)).
+Get the files from the **[latest release](https://github.com/kikoz85/videoSTAX/releases/latest)** (all versions: [Releases page](https://github.com/kikoz85/videoSTAX/releases)). On Windows you can also install it from the **[Microsoft Store](https://apps.microsoft.com/detail/9NN8LH8CW9CX)**.
 
 | Platform | File | How to install |
 | :--- | :--- | :--- |
 | **macOS** (Apple Silicon) | `VideoSTAX-v1.0.1-macOS.dmg` | Open the DMG and drag VideoSTAX to Applications |
+| **Windows 10/11** (x64 and ARM64) | [Microsoft Store](https://apps.microsoft.com/detail/9NN8LH8CW9CX) | Click **Get**: the Store installs the right version and keeps it updated |
 | **Windows 10/11** (x64) | `VideoSTAX-v1.0.1-Windows-x64.zip` | Extract the folder and run `videostax_ui.exe` |
 | **Windows 11 on ARM** | `VideoSTAX-v1.0.1-Windows-arm64.zip` | Extract the folder and run `videostax_ui.exe` |
 | **Linux** (any distribution, x86_64) | `VideoSTAX-v1.0.1-x86_64.AppImage` | `chmod +x` the file and run it |
@@ -232,6 +234,9 @@ Keep free disk space of at least two to three times the size of the output file:
 3. Settings are stored in `~/Library/Application Support/VideoSTAX`. To uninstall, drag the app to the Trash.
 
 #### Windows
+**Microsoft Store (recommended):** open [VideoSTAX on the Microsoft Store](https://apps.microsoft.com/detail/9NN8LH8CW9CX) and click **Get**. The Store picks the x64 or ARM64 version, updates it by itself and adds VideoSTAX to the Start menu; uninstall it from **Settings → Apps**. The Store version has the same features and bundled tools as the ZIP.
+
+**ZIP:**
 1. Extract `VideoSTAX-v1.0.1-Windows-x64.zip` (or `-Windows-arm64.zip` on Windows on ARM) to a folder of your choice (for example `C:\Programs\VideoSTAX`).
 2. Run `videostax_ui.exe`. Keep the whole folder together: the `bin` folder contains the encoding tools.
 3. If SmartScreen shows a warning, click **More info → Run anyway**.
@@ -254,7 +259,7 @@ Keep free disk space of at least two to three times the size of the output file:
 ### FAQ and troubleshooting
 
 **How do I update VideoSTAX?**
-When a new version is out, VideoSTAX shows a window at startup: click **Download**. On macOS drag the app from the opened DMG to Applications; on Windows extract the ZIP over your VideoSTAX folder; the Linux AppImage replaces itself (click **Restart now**); .deb/.rpm open in the system installer. You can also use **Settings → Updates → Check now**, or download from the [latest release](https://github.com/kikoz85/videoSTAX/releases/latest). Your settings are kept.
+When a new version is out, VideoSTAX shows a window at startup: click **Download**. On macOS drag the app from the opened DMG to Applications; on Windows extract the ZIP over your VideoSTAX folder; the Linux AppImage replaces itself (click **Restart now**); .deb/.rpm open in the system installer. You can also use **Settings → Updates → Check now**, or download from the [latest release](https://github.com/kikoz85/videoSTAX/releases/latest). Your settings are kept. If you installed VideoSTAX from the Microsoft Store, updates arrive through the Store and the app does not check GitHub.
 
 **A hardware encoder is missing from the menu.**
 It appears only when the graphics card and the driver support it. Update the GPU driver and restart VideoSTAX. The **Apps** window shows which tools were found.
@@ -292,11 +297,12 @@ Usa strumenti affermati (FFmpeg, MKVToolNix, VapourSynth) e, quando disponibili,
 
 ### Download
 
-Scarica i file dall'**[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest)** (tutte le versioni: [pagina Releases](https://github.com/kikoz85/videoSTAX/releases)).
+Scarica i file dall'**[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest)** (tutte le versioni: [pagina Releases](https://github.com/kikoz85/videoSTAX/releases)). Su Windows puoi installarlo anche dal **[Microsoft Store](https://apps.microsoft.com/detail/9NN8LH8CW9CX)**.
 
 | Piattaforma | File | Come installare |
 | :--- | :--- | :--- |
 | **macOS** (Apple Silicon) | `VideoSTAX-v1.0.1-macOS.dmg` | Apri il DMG e trascina VideoSTAX in Applicazioni |
+| **Windows 10/11** (x64 e ARM64) | [Microsoft Store](https://apps.microsoft.com/detail/9NN8LH8CW9CX) | Clicca **Ottieni**: lo Store installa la versione giusta e la tiene aggiornata |
 | **Windows 10/11** (x64) | `VideoSTAX-v1.0.1-Windows-x64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
 | **Windows 11 su ARM** | `VideoSTAX-v1.0.1-Windows-arm64.zip` | Estrai la cartella e avvia `videostax_ui.exe` |
 | **Linux** (qualsiasi distribuzione, x86_64) | `VideoSTAX-v1.0.1-x86_64.AppImage` | Rendi eseguibile il file con `chmod +x` e avvialo |
@@ -497,6 +503,9 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 3. Le impostazioni sono salvate in `~/Library/Application Support/VideoSTAX`. Per disinstallare, trascina l'app nel Cestino.
 
 #### Windows
+**Microsoft Store (consigliato):** apri [VideoSTAX sul Microsoft Store](https://apps.microsoft.com/detail/9NN8LH8CW9CX) e clicca **Ottieni**. Lo Store sceglie la versione x64 o ARM64, la aggiorna da solo e aggiunge VideoSTAX al menu Start; si disinstalla da **Impostazioni → App**. La versione dello Store ha le stesse funzioni e gli stessi strumenti inclusi dello ZIP.
+
+**ZIP:**
 1. Estrai `VideoSTAX-v1.0.1-Windows-x64.zip` (oppure `-Windows-arm64.zip` su Windows ARM) in una cartella a tua scelta (per esempio `C:\Programmi\VideoSTAX`).
 2. Avvia `videostax_ui.exe`. Tieni la cartella completa: la sottocartella `bin` contiene gli strumenti di codifica.
 3. Se SmartScreen mostra un avviso, clicca **Ulteriori informazioni → Esegui comunque**.
@@ -519,7 +528,7 @@ Tieni libero sul disco almeno due o tre volte la dimensione del file finale: alc
 ### Domande frequenti
 
 **Come aggiorno VideoSTAX?**
-Quando esce una nuova versione, VideoSTAX mostra una finestra all'avvio: clicca **Scarica**. Su macOS trascina l'app dal DMG aperto in Applicazioni; su Windows estrai lo ZIP sopra la cartella di VideoSTAX; l'AppImage di Linux si sostituisce da sola (clicca **Riavvia ora**); .deb/.rpm si aprono nell'installer di sistema. Puoi anche usare **Impostazioni → Aggiornamenti → Controlla ora**, oppure scaricare dall'[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest). Le impostazioni vengono mantenute.
+Quando esce una nuova versione, VideoSTAX mostra una finestra all'avvio: clicca **Scarica**. Su macOS trascina l'app dal DMG aperto in Applicazioni; su Windows estrai lo ZIP sopra la cartella di VideoSTAX; l'AppImage di Linux si sostituisce da sola (clicca **Riavvia ora**); .deb/.rpm si aprono nell'installer di sistema. Puoi anche usare **Impostazioni → Aggiornamenti → Controlla ora**, oppure scaricare dall'[ultima release](https://github.com/kikoz85/videoSTAX/releases/latest). Le impostazioni vengono mantenute. Se hai installato VideoSTAX dal Microsoft Store, gli aggiornamenti arrivano dallo Store e l'app non controlla GitHub.
 
 **Nel menu manca un encoder hardware.**
 Compare solo se la scheda video e il driver lo supportano. Aggiorna il driver e riavvia VideoSTAX. La finestra **Apps** mostra quali strumenti sono stati trovati.
